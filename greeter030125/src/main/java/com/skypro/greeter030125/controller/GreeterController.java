@@ -15,7 +15,7 @@ public class GreeterController {
 
     @GetMapping("/greet")
     public String greet(@RequestParam(value = "name", required = false) String name) {//required -(r)екуа'йреть
-        return greeterService.greeter(name);
+        return greeterService.greet(name);
     }
     // required=false в аннотации @RequestParam означает
     // что данный параметр может принимать значение null

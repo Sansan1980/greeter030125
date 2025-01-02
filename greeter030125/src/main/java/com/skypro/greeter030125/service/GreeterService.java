@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class GreeterService {
 
-    public String greeter(String name) {
+    public  String greet(String name) {
         if (name == null || name.isEmpty()) {
             return "Hello, Anonimus";
         }
