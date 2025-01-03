@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class GreeterService {
 
     public  String greet(String name) {
-        if (name == null || name.isEmpty()) {
+        if (name == null || name.isEmpty()|| name.isBlank()) {
             return "Hello, Anonimus";
         }
         return "Hello," + name;
